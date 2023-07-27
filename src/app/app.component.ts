@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { getPosts } from './posts.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+  `,
+  styles: [``],
 })
 export class AppComponent {
-  title = 'esercizio';
+  constructor() {}
 }
